@@ -1,19 +1,26 @@
-# enterprise-rag-llm-system
-Production-grade RAG system using LLMs
 Enterprise RAG LLM System 🚀
 
-Production-ready Retrieval-Augmented Generation system for document intelligence.
+Production-grade Retrieval-Augmented Generation (RAG) system for enterprise document intelligence.
+
+📌 Overview
+This project enables intelligent question-answering over enterprise documents using LLMs and vector search.
 
 🏗 Architecture
-
-User → API → Retriever → LLM → Response
+User → API → Retriever → Vector DB → LLM → Response
 
 ⚙️ Features
-Document ingestion
-Embeddings + vector search
+Document ingestion (PDF, DOCX)
+Embeddings and vector search
 Context-aware LLM responses
 Prompt optimization
-Monitoring & logging
+Logging and monitoring
+
+🛠 Tech Stack
+Python
+FastAPI
+OpenAI / Azure OpenAI
+FAISS
+
 ▶️ Run Locally
 pip install -r requirements.txt
 uvicorn app.main:app --reload
